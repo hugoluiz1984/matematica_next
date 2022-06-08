@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
+.container{
+  font-family: 'Anton', sans-serif;
+}
 .container {
   padding: 0 2rem;
   background-color: gray;
@@ -153,10 +157,11 @@
 
 }
 .LinhaTabuada input {
+  font-family: 'Roboto', sans-serif;
   width: 70px;
   height: 60px;
   box-sizing: border-box;
-  padding: 0;
+  padding: 5px;
   font-size: 40px;
   font-weight: bold;
   justify-content: center;
@@ -176,7 +181,21 @@
   font-weight: bold;
   
 }
-
+.TabuadaCardErrada{
+  display: none;
+}
+.Errado{
+  display: none;
+}
+.Ok{
+  background-color: #0f2913;
+}
+.correto{
+  width: 100px;
+  margin-left:10px;
+  font-size: 40px;
+  font-weight: bold;
+}
 .logo {
   height: 1em;
   margin-left: 0.5rem;

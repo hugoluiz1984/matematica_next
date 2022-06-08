@@ -5,7 +5,7 @@ import { useState } from 'react'
 import styles from '../../styles/Home.module.css'
 
 export default function TabuadaMenu() {
-    const [nivel, setNivel] = useState(0)
+    //const [nivel, setNivel] = useState(0)
     const ListaNivel =[
         1,2,3,4,5,6,7,8,9,10
     ]
