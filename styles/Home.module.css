@@ -5,7 +5,7 @@
 .container {
   padding: 0 2rem;
   background-color: gray;
-  background-image: linear-gradient( rgb(25, 0, 255), rgb(45, 115, 219));
+  background-image: linear-gradient( rgb(16, 4, 122), rgb(72, 136, 233));
 }
 
 .main {
@@ -20,7 +20,7 @@
 .App {
   display: flex;
   flex-direction: column;
-  height: 800px;
+  min-height: 800px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -195,6 +195,12 @@
   margin-left:10px;
   font-size: 40px;
   font-weight: bold;
+}
+.Titulo{
+  padding: 10px;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
 }
 .logo {
   height: 1em;

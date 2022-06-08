@@ -19,9 +19,7 @@ export default function Home() {
           <a>Tabuada</a>
         </Link>
         </div>
-        <div className={styles.bnt_start}>
-          Desafio de Multiplicação
-        </div>
+        
 
       </main>
 

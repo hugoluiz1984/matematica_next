@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../../../styles/Home.module.css';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const Post = () => {
   const router = useRouter()
@@ -24,10 +25,10 @@ const Post = () => {
     for (let i = 1; i <11 ; i++) {
       //console.log(slug*i, valor[i-1])
       if (slug*i == valor[i-1]) {
-        tabela[i-1]='Ok';
+        tabela[i-1]='Certa';
         //console.log('Ok');
       }else{
-        tabela[i-1]='';
+        tabela[i-1]='Errada';
         //console.log('Errado');
       }
 
@@ -47,6 +48,7 @@ const Post = () => {
       </Head>
       <main className={styles.App}>
         <div className={styles.Tabuada}>
+          <div className={styles.Titulo}>TABUADA</div>
             {
               ListaNumeros.map(nivel => 
                 <div key={nivel} className={styles.LinhaTabuada}>
@@ -61,6 +63,7 @@ const Post = () => {
             }
         </div>
         <button onClick={onClickHandler}>Verificar </button>
+        <Link href='../tabuada'><div onClick=''>Voltar </div></Link>
 
       </main>
 

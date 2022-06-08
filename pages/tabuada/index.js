@@ -19,6 +19,7 @@ export default function TabuadaMenu() {
       </Head>
 
       <main className={styles.App}>
+        <div className={styles.Titulo}>TABUADA</div>
         <div className={styles.grid}>
             {
                 ListaNivel.map(nivel => <Link key={nivel} href={caminho+nivel} target="_self"><a ><div key={nivel} className={styles.card}><p>{nivel}</p></div></a></Link>)
