@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  background-color: gray;
+  background-image: linear-gradient( rgb(25, 0, 255), rgb(45, 115, 219));
 }
 
 .main {
@@ -10,6 +12,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.bnt_start{
+  display: flex;
+  height: 100px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  font-size: 25px;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 15px;
+  border-radius: 10px;
+  color: white;
+  background-image: linear-gradient( rgb(45, 115, 219),rgb(25, 0, 255),rgb(25, 0, 255));
+  box-shadow: 5px 5px 5px lightblue;
+  text-transform: uppercase;
 }
 
 .footer {
@@ -74,15 +102,22 @@
 }
 
 .card {
+  display: flex;
   margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+  height: 100px;
+  width: 100px;
+  padding: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 5px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .card:hover,
@@ -103,6 +138,35 @@
   line-height: 1.5;
 }
 
+.LinhaTabuada{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+
+}
+.LinhaTabuada input {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  
+}
+.TabuadaCard{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .logo {
   height: 1em;
   margin-left: 0.5rem;
@@ -111,6 +175,5 @@
 @media (max-width: 600px) {
   .grid {
     width: 100%;
-    flex-direction: column;
   }
 }
