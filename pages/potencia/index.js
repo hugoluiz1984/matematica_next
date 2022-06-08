@@ -1,9 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import { useState } from 'react'
+import styles from '../../styles/Home.module.css'
 
-export default function Home() {
+export default function TabuadaMenu() {
+    //const [nivel, setNivel] = useState(0)
+    const ListaNivel =[
+        1,2,3,4,5,6,7,8,9,10
+    ]
+    const caminho = 'potencia/'
   return (
     <div className={styles.container}>
       <Head>
@@ -13,19 +19,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.App}>
-        <Link href="/tabuada" target="_self">
-          <div className={styles.bnt_start}>
-          
-            <a>Tabuada</a>
-          
-          </div>
-        </Link>
-        <Link href="/potencia" target="_self">
-          <div className={styles.bnt_start}>
-            <a>Exponenciação</a>
-          </div>
-        </Link>
-        
+        <div className={styles.Titulo}>Exponenciação</div>
+        <div className={styles.grid}>
+            {
+                ListaNivel.map(nivel => <Link key={nivel} href={caminho+nivel} target="_self"><a ><div key={nivel} className={styles.card}><p>{nivel}</p></div></a></Link>)
+            }
+        </div>
 
       </main>
 

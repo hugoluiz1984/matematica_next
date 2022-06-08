@@ -163,7 +163,7 @@
 
 }
 .LinhaTabuada input {
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   width: 70px;
   height: 60px;
   box-sizing: border-box;
@@ -173,7 +173,29 @@
   justify-content: center;
   align-items: center;
   margin-left: 5px;
-  
+}
+.LinhaPotencia{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+
+}
+.LinhaPotencia input {
+  font-family: Arial, sans-serif;
+  width: 300px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
 }
 .TabuadaCard{
   margin-right:5px;
@@ -186,6 +208,14 @@
   font-size: 40px;
   font-weight: bold;
   
+  
+}
+.TabuadaCard sup{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  vertical-align: super;
+  text-indent: 30%;
+  align-self: flex-start;
 }
 .TabuadaCardErrada{
   display: none;
