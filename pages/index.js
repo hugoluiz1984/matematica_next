@@ -13,12 +13,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.App}>
-        <div className={styles.bnt_start}>
-        <Link href="/tabuada"
-          target="_self">
-          <a>Tabuada</a>
+        <Link href="/tabuada" target="_self">
+          <div className={styles.bnt_start}>
+          
+            <a>Tabuada</a>
+          
+          </div>
         </Link>
-        </div>
         
 
       </main>
