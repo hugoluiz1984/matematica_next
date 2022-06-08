@@ -247,6 +247,10 @@
   
   .LinhaTabuada input {
     width: 80px;
-    
+  
   }
+  .LinhaPotencia input {
+    width: 200px;
+  }
+
 }
