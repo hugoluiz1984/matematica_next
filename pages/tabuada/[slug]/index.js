@@ -25,10 +25,10 @@ const Post = () => {
     for (let i = 1; i <11 ; i++) {
       //console.log(slug*i, valor[i-1])
       if (slug*i == valor[i-1]) {
-        tabela[i-1]='Certa';
+        tabela[i-1]='✔️';
         //console.log('Ok');
       }else{
-        tabela[i-1]='Errada';
+        tabela[i-1]='❌';
         //console.log('Errado');
       }
 
