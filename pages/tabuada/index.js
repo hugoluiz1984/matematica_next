@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 import styles from '../../styles/Home.module.css'
 
@@ -20,7 +21,7 @@ export default function TabuadaMenu() {
       <main className={styles.App}>
         <div className={styles.grid}>
             {
-                ListaNivel.map(nivel => <a key={nivel} href={caminho+nivel} target="_self"><div key={nivel} className={styles.card}><p>{nivel}</p></div></a>)
+                ListaNivel.map(nivel => <Link key={nivel} href={caminho+nivel} target="_self"><a ><div key={nivel} className={styles.card}><p>{nivel}</p></div></a></Link>)
             }
         </div>
 
