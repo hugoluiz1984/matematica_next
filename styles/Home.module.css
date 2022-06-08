@@ -5,7 +5,7 @@
 }
 
 .main {
-  min-height: 100vh;
+  max-height: 1000px;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -16,7 +16,7 @@
 .App {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 800px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -149,8 +149,10 @@
 
 }
 .LinhaTabuada input {
-  width: 60px;
+  width: 70px;
   height: 60px;
+  box-sizing: border-box;
+  padding: 0;
   font-size: 40px;
   font-weight: bold;
   justify-content: center;
@@ -173,7 +175,9 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
+  
+  .LinhaTabuada input {
+    width: 80px;
+    
   }
 }
